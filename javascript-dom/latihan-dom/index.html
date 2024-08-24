@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan-DOM</title>
+    <link href="src/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-900 text-white">
+    <div class="container mx-auto">
+      <!-- Poin Start -->
+      <div class="flex mt-20 justify-evenly align-center">
+        <div class="text-center">
+          <h1 class="text-5xl font-semibold text-center">Home</h1>
+          <p
+            class="text-red-500 py-5 px-16 bg-black text-5xl mx-auto text-center rounded my-2"
+          >
+            0
+          </p>
+          <button class="bg-blue-500 p-2 text-xl mt-3" id="button1" disabled>
+            +1
+          </button>
+        </div>
+        <div class="text-center">
+          <h1 class="text-5xl font-semibold text-center">Guest</h1>
+          <p
+            class="text-red-500 py-5 px-16 bg-black text-5xl mx-auto text-center rounded my-2"
+          >
+            0
+          </p>
+          <button class="bg-blue-500 p-2 text-xl mt-3" disabled id="button2">
+            +1
+          </button>
+        </div>
+      </div>
+      <!-- Poin End -->
+      <!-- Pilih Point Start -->
+      <div class="text-center mt-20">
+        <form action="">
+          <select
+            name="voice"
+            id="voice"
+            class="text-black outline-none"
+            value=""
+          >
+            <option value="Select Max Point">Select Max Point</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+          </select>
+          <br />
+          <input
+            type="submit"
+            name="reset"
+            value="reset"
+            class="bg-transparent border py-3 px-10 rounded text-xl font-medium cursor-pointer transition duration-200 mt-5 hover:bg-blue-500"
+          />
+        </form>
+      </div>
+      <!-- Pilih Point End -->
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

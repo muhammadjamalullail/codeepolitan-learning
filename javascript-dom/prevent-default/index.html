@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Add list name</h1>
+    <form action="">
+      <input type="text" placeholder="name" name="name" />
+      <input type="submit" value="tambah" name="tambah" />
+    </form>
+
+    <ul></ul>
+
+    <script>
+      const name = document.querySelector("input[name=name]");
+      const add = document.querySelector("input[value=tambah]");
+
+      add.addEventListener("click", (e) => {
+        if (name.value == "") {
+        } else {
+          const ul = document.querySelector("ul");
+          const li = document.createElement("li");
+          li.textContent = name.value;
+          ul.appendChild(li);
+        }
+        name.value = "";
+        e.preventDefault();
+      });
+
+      name.addEventListener("change", (e) => {
+        console.log(`berubah pada huruf ${e}`);
+      });
+    </script>
+  </body>
+</html>

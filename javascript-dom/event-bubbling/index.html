@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div onclick="alert('ini adalah sebuah div')" style="padding:20px; border:1px solid;">
+      <h1 onclick="alert('ini adalah sebuah h1')">clickme</h1>
+    </div>
+
+    <script>
+      const h1 = document.querySelector("h1");
+      h1.addEventListener("click", (e) => {
+        e.stopPropagation();
+      });
+    </script>
+  </body>
+</html>
