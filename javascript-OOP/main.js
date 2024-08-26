@@ -1,10 +1,31 @@
-var herbivora = new Array("kambing", "sapi");
-var karnivora = new Array("harimau", "serigala");
-var omnivora = new Array("ayam", "monyet");
-var binatang = new Array(herbivora, karnivora, omnivora);
+class Job {
+  constructor(a, b) {
+    this.name = a;
+    this.age = b;
+  }
 
-// Isi Array `binatang`
+  sayHello() {
+    return "halo gaeess";
+  }
+}
 
-binatang[0][0] = "gajah";
+class Programmer extends Job {
+  constructor(a, b, c) {
+    super(a, b);
+    this.hobi = c;
+  }
+  myName() {
+    return `my name is ${this.name}`;
+  }
+  myAge() {
+    return `my age this year ${this.age}`;
+  }
+  myHobby() {
+    return `my Hobby is a ${this.hobi}`;
+  }
+}
 
-console.log(binatang);
+const tes = new Programmer("jamal", 18, "ngoding");
+console.log(
+  `${tes.sayHello()} ${tes.myName()} ${tes.myAge()} ${tes.myHobby()}`
+);
