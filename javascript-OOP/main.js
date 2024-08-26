@@ -29,3 +29,5 @@ const tes = new Programmer("jamal", 18, "ngoding");
 console.log(
   `${tes.sayHello()} ${tes.myName()} ${tes.myAge()} ${tes.myHobby()}`
 );
+
+// aku sayang ibu
